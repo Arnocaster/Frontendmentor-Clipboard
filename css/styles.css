@@ -27,9 +27,281 @@ For the social icons, you can use the SVGs provided or a font icon library. Some
 - [IcoMoon](https://icomoon.io)
 - [Ionicons](https://ionicons.com) */
 
-body {
+html,body {
   font-family: "Bai Jamjuree";
   font-size: 18px;
+  
 }
 
+
+/* ---MASTER CLASSES--- */
+
+.p {
+  color: hsl(201, 11%, 66%);
+  line-height: 1.5rem;
+  font-size : 0.9rem;
+  font-weight: 500;
+  opacity: 0.8;
+}
+
+/* Paragraphes limités en largeur */
+.p--contrainst {
+  max-width: 600px;
+}
+
+.h1, .h2 , .h3{
+  color : hsl(210, 10%, 33%)
+}
+
+.h2 {
+  width : 100%;
+  font-size : 1.8rem;
+  letter-spacing: -0.08rem;
+  font-weight: 600;
+}
+
+.h3 {
+  font-size : 1.3rem;
+  font-weight : 600;
+}
+
+/* ---PAGE CONTAINER---  */
+.page__container {
+  margin : 0 auto;
+  display : flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("./../images/bg-header-desktop.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top;
+
+}
+
+
+/* ---HEADER--- */
+.header {
+  margin : 6rem 0 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.header__logo {
+  width : 125px;
+  height : 125px;
+  margin-bottom : 3rem;
+}
+
+.header__h1 {
+  font-size: 2.3rem;
+  font-weight: 600;
+  margin-bottom : 1rem;
+}
+
+.header__p {
+  font-size : 1rem;
+}
+
+.button__div--container{
+  display: flex;
+  padding : 3rem;
+}
+
+.button__link{
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.05rem;
+  font-stretch: 50%;
+  color : #fff;
+  padding : 1rem 1.6rem;
+  border-radius: 2rem;
+  margin : 0 0.3rem;
+}
+
+.button__link--green {
+  background-color: hsl(171, 66%, 44%);
+  -webkit-box-shadow: -3px 5px 30px -10px hsl(171, 66%, 44%); 
+  box-shadow: -3px 5px 30px -10px hsl(171, 66%, 44%);
+}
+
+.button__link--blue{
+  background-color: hsl(233, 100%, 69%);
+  -webkit-box-shadow: -3px 5px 30px -13px #000; 
+  box-shadow: -3px 5px 30px -13px #000;
+}
+
+/* ---MAIN-CONTAINER--- */
+
+.main-container, .article  {
+  display : flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.article {
+  margin-bottom: 5rem;
+}
+
+.article__h2 {
+  text-align: center;
+  margin-bottom : 1.5rem;
+}
+
+.article__p {
+  text-align: center;
+}
+
+.article--fullwidth {
+  width : 100%;
+  max-width: 100%;
+  margin-bottom: 5rem;
+  display:flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.article--desktop {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 8rem;
+}
+
+
+
+.article__img--left {
+  width : calc(50% + 5rem);
+  margin-left: -5rem;
+}
+
+
+
+.article__h3 {
+  font-size : 1.4rem;
+  margin-bottom: 0.8rem;
+}
+
+.article__div--w50prct{
+  width : calc(50% - 5rem);
+  margin-left: 5rem;
+  display : flex;
+  flex-direction: column;
+}
+
+.article__p--h30prct{
+  min-width: 50%;
+  max-width : 60%;
+  text-align: left;
+
+  margin-bottom: 3rem;
+}
+
+.article__img--fullwide {
+  width : 85%;
+  object-fit : cover;
+}
+
+.article__img--devices {
+  margin-top: 5rem;
+}
+
+.article__div--3assets{
+  max-width: 1280px;
+  text-align: center;
+  padding : 5rem;
+  margin-bottom: 3rem;
+  display : flex;
+  justify-content: space-around;
+}
+
+.article__div--w30pct{
+  width : 25%;
+  display : flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.article__p--3assets{
+  font-size: 0.9rem;
+}
+
+.article__img--3assets {
+  width : 35px;
+  margin-bottom: 2rem;
+
+}
+
+.article--brands {
+  width : 80%;
+  max-width: 1280px;
+  display : flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8rem;
+}
+
+.article__img--brand{
+  width : 15%;
+  object-fit : cover;
+}
+
+.footer {
+  width: 100%;
+  padding : 2rem 0;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color :hsla(206, 4%, 35%, 0.8);
+  background-color: hsl(220, 18%, 97%);
+  display:flex;
+}
+
+
+
+.footer__div--logo{
+  width : 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__img--logo{
+  width:50px;
+  height: 50px;
+  
+}
+
+.footer__div--link{
+  width : 60%;
+  display: flex;
+}
+
+.footer__div--column{
+  width : 25%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+}
+
+.footer_a{
+
+}
+
+.footer__div--social{
+  width: 20%;
+  display: flex;
+  align-items: center;
+}
+
+.footer__img--social{
+  width: 20px;
+  height: 20px;
+  margin-left: 20px;
+}
 
